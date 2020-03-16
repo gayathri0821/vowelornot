@@ -1,0 +1,48 @@
+package bootcamp;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Vowelornot {
+
+	public static void main(String[] args)
+	{
+		boolean isVowel=false;
+		//initialize the variable
+		char ch;
+			//read input values from keyboard through Scanner
+        Scanner sc = new Scanner(System.in);
+		//prompt the user for input value
+        System.out.print("Enter an Alphabet : ");
+        ch = sc.next().charAt(0);
+        //using switch cae
+		switch(ch)
+		{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U': isVowel=true;
+		}
+		//check if the condition is true or not
+		if(isVowel==true)
+		{
+			System.out.println("is vowel");
+		}
+		else if((ch>='a' && ch>='z')||(ch>='A' && ch>='Z'))
+		{
+			System.out.println("consonent");
+		}
+		else
+		{
+		System.out.println("wrong data");
+		}
+		}
+}
+
+ 	
